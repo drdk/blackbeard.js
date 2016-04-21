@@ -1,0 +1,33 @@
+{
+  "name": "blackbeard.js",
+  "version": "1.0.0",
+  "description": "Install `gitbook` command:\\\\r ```npm i gitbook-cli -g```",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "publish": "node publish.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drdk/blackbeard.js.git"
+  },
+  "keywords": [
+    "blackbeard",
+    "js",
+    "documentation"
+  ],
+  "author": "Play",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/drdk/blackbeard.js/issues"
+  },
+  "homepage": "https://github.com/drdk/blackbeard.js#readme",
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-toc": "0.0.1"
+  }
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Punycode | Blackbeard.js</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../../docs/js/querystring.html" />
+    
+    
+    <link rel="prev" href="../../docs/js/path.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.6"
+        data-chapter-title="Punycode"
+        data-filepath="docs/js/punycode.md"
+        data-basepath="../.."
+        data-revision="Thu Apr 21 2016 15:28:21 GMT+0200 (CEST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Information</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="docs/info/getting-started.html">
+            
+            <span><b>1.1.</b> Getting Started</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/info/automatic-payload-updates.html">
+            
+            <span><b>1.2.</b> Automatic Payload Updates</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/info/types.html">
+            
+            <span><b>1.3.</b> Types</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Examples</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="docs/sample/tododone.html">
+            
+            <span><b>2.1.</b> ToDoDone</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="docs/sample/schedule.html">
+            
+            <span><b>2.2.</b> TV Schedule</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> JavaScript Modules</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="docs/js/buffer.html">
+            
+            <span><b>3.1.</b> Buffer</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="docs/js/events.html">
+            
+                
+                    <a href="../../docs/js/events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Events
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="docs/js/fs.html">
+            
+                
+                    <a href="../../docs/js/fs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        File System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="docs/js/path.html">
+            
+                
+                    <a href="../../docs/js/path.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Path
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="docs/js/process.html">
+            
+            <span><b>3.5.</b> Process</span>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="docs/js/punycode.html">
+            
+                
+                    <a href="../../docs/js/punycode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Punycode
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="docs/js/querystring.html">
+            
+                
+                    <a href="../../docs/js/querystring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Query String
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="docs/js/stream.html">
+            
+                
+                    <a href="../../docs/js/stream.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Stream
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="docs/js/tasks.html">
+            
+            <span><b>3.9.</b> Tasks</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="docs/js/url.html">
+            
+                
+                    <a href="../../docs/js/url.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        URL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="docs/js/util.html">
+            
+                
+                    <a href="../../docs/js/util.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        Utilities
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Native Bindings</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="docs/native/buffer.html">
+            
+            <span><b>4.1.</b> Buffer</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="docs/native/fs.html">
+            
+            <span><b>4.2.</b> File System</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="docs/native/stream.html">
+            
+            <span><b>4.3.</b> Stream</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="docs/native/tasks.html">
+            
+            <span><b>4.4.</b> Tasks</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="docs/native/process.html">
+            
+            <span><b>4.5.</b> Process</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Blackbeard.js</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <div class="stability">
+  <span class="badge ios green"> </span><span class="badge android green"> </span>
+</div>
+
+
+
+<!-- toc -->
+<ul>
+<li><a href="#punycode">punycode</a><ul>
+<li><a href="#punycodedecodestring">punycode.decode(string)</a></li>
+<li><a href="#punycodeencodestring">punycode.encode(string)</a></li>
+<li><a href="#punycodetoasciidomain">punycode.toASCII(domain)</a></li>
+<li><a href="#punycodetounicodedomain">punycode.toUnicode(domain)</a></li>
+<li><a href="#punycodeucs2">punycode.ucs2</a><ul>
+<li><a href="#punycodeucs2decodestring">punycode.ucs2.decode(string)</a></li>
+<li><a href="#punycodeucs2encodecodepoints">punycode.ucs2.encode(codePoints)</a></li>
+</ul>
+</li>
+<li><a href="#punycodeversion">punycode.version</a></li>
+</ul>
+</li>
+</ul>
+<!-- toc stop -->
+<h1 id="punycode">punycode</h1>
+<p>This module provides utilities for dealing with Unicode and ASCII symbols. Use <code>require(&apos;punycode&apos;)</code> to access it.</p>
+<h2 id="punycodedecodestring">punycode.decode(string)</h2>
+<p>Converts a Punycode string of ASCII-only symbols to a string of Unicode symbols.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// decode domain name parts</span>
+punycode.decode(<span class="hljs-string">&apos;maana-pta&apos;</span>); <span class="hljs-comment">// &apos;ma&#xF1;ana&apos;</span>
+punycode.decode(<span class="hljs-string">&apos;--dqo34k&apos;</span>); <span class="hljs-comment">// &apos;&#x2603;-&#x2318;&apos;</span>
+</code></pre>
+<h2 id="punycodeencodestring">punycode.encode(string)</h2>
+<p>Converts a string of Unicode symbols to a Punycode string of ASCII-only symbols.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// encode domain name parts</span>
+punycode.encode(<span class="hljs-string">&apos;ma&#xF1;ana&apos;</span>); <span class="hljs-comment">// &apos;maana-pta&apos;</span>
+punycode.encode(<span class="hljs-string">&apos;&#x2603;-&#x2318;&apos;</span>); <span class="hljs-comment">// &apos;--dqo34k&apos;</span>
+</code></pre>
+<h2 id="punycodetoasciidomain">punycode.toASCII(domain)</h2>
+<p>Converts a Unicode string representing a domain name to Punycode. Only the
+non-ASCII parts of the domain name will be converted, i.e. it doesn&apos;t matter if
+you call it with a domain that&apos;s already in ASCII.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// encode domain names</span>
+punycode.toASCII(<span class="hljs-string">&apos;ma&#xF1;ana.com&apos;</span>); <span class="hljs-comment">// &apos;xn--maana-pta.com&apos;</span>
+punycode.toASCII(<span class="hljs-string">&apos;&#x2603;-&#x2318;.com&apos;</span>); <span class="hljs-comment">// &apos;xn----dqo34k.com&apos;</span>
+</code></pre>
+<h2 id="punycodetounicodedomain">punycode.toUnicode(domain)</h2>
+<p>Converts a Punycode string representing a domain name to Unicode. Only the
+Punycoded parts of the domain name will be converted, i.e. it doesn&apos;t matter if
+you call it on a string that has already been converted to Unicode.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// decode domain names</span>
+punycode.toUnicode(<span class="hljs-string">&apos;xn--maana-pta.com&apos;</span>); <span class="hljs-comment">// &apos;ma&#xF1;ana.com&apos;</span>
+punycode.toUnicode(<span class="hljs-string">&apos;xn----dqo34k.com&apos;</span>); <span class="hljs-comment">// &apos;&#x2603;-&#x2318;.com&apos;</span>
+</code></pre>
+<h2 id="punycodeucs2">punycode.ucs2</h2>
+<h3 id="punycodeucs2decodestring">punycode.ucs2.decode(string)</h3>
+<p>Creates an array containing the numeric code point values of each Unicode
+symbol in the string. While <a href="https://mathiasbynens.be/notes/javascript-encoding" target="_blank">JavaScript uses UCS-2 internally</a>, this function
+will convert a pair of surrogate halves (each of which UCS-2 exposes as
+separate characters) into a single code point, matching UTF-16.</p>
+<pre><code class="lang-js">punycode.ucs2.decode(<span class="hljs-string">&apos;abc&apos;</span>); <span class="hljs-comment">// [0x61, 0x62, 0x63]</span>
+<span class="hljs-comment">// surrogate pair for U+1D306 tetragram for centre:</span>
+punycode.ucs2.decode(<span class="hljs-string">&apos;\uD834\uDF06&apos;</span>); <span class="hljs-comment">// [0x1D306]</span>
+</code></pre>
+<h3 id="punycodeucs2encodecodepoints">punycode.ucs2.encode(codePoints)</h3>
+<p>Creates a string based on an array of numeric code point values.</p>
+<pre><code class="lang-js">punycode.ucs2.encode([<span class="hljs-number">0x61</span>, <span class="hljs-number">0x62</span>, <span class="hljs-number">0x63</span>]); <span class="hljs-comment">// &apos;abc&apos;</span>
+punycode.ucs2.encode([<span class="hljs-number">0x1D306</span>]); <span class="hljs-comment">// &apos;\uD834\uDF06&apos;</span>
+</code></pre>
+<h2 id="punycodeversion">punycode.version</h2>
+<p>A string representing the current Punycode.js version number.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../docs/js/path.html" class="navigation navigation-prev " aria-label="Previous page: Path"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../docs/js/querystring.html" class="navigation navigation-next " aria-label="Next page: Query String"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"github":{"url":"https://github.com/drdk/blackbeard.js"},"toc":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
