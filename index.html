@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Introduction | Blackbeard.js</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
+        <meta name="description" content="Blackbeard.js is a JavaScript bridge for app development. Unlike many other frameworks, we don&#39;t want to abstract away the whole UI layer.">
         <meta name="generator" content="GitBook 2.6.7">
         
         
@@ -53,7 +53,7 @@
         data-chapter-title="Introduction"
         data-filepath="intro.md"
         data-basepath="."
-        data-revision="Thu Apr 21 2016 15:35:19 GMT+0200 (CEST)"
+        data-revision="Thu Apr 21 2016 16:22:41 GMT+0200 (CEST)"
         data-innerlanguage="">
     
 
@@ -383,8 +383,17 @@
 </center>
 
 <hr>
-<pre><code>TODO: Write introduction.
-</code></pre>
+<p>Blackbeard.js is a JavaScript bridge for app development. Unlike many other frameworks, we don&apos;t want to abstract away the whole UI layer.</p>
+<p>Consumers on the various platforms expect a certain look and feel and while some frameworks, such as <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> and <a href="https://www.nativescript.org" target="_blank">NativeScript</a>, recognizes this, they then require you to familiarize yourself with the platform APIs, sets up limitations for what you can do, or simply tells you to move to native UI development if you want non-standard UIs.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>We aim for this to be the core of our apps &#x2014; handling all the business logic and data, across all of the app platforms. Data is passed around through global events or through native bindings.</p>
+<p>Eventually, we&apos;d like to be able to use our NodeJS modules in the apps themselves, thus ensuring consistency across all of our platforms.</p>
+<p>This also makes it easier to squish bugs, push out payload updates, change data endpoints and whatnot.</p>
+<p>Another benefit of all this is to be able to use all of our JavaScript developers for quite a large percentage of the app development process.</p>
+<h2 id="what-its-not">What it&apos;s not</h2>
+<p>It is <strong>not</strong> a port of NodeJS. NodeJS was designed for server-side development and while we&apos;re able to use quite a few things, some things just don&apos;t make sense or doesn&apos;t exist at all.</p>
+<p>For instance, there&apos;ll be a new module for handling persistent storage, seamlessly synchronizing with iCloud and Google.</p>
+
                     
                     </section>
                 
