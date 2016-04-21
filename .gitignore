@@ -1,0 +1,28 @@
+xcuserdata/*
+Pods/
+Carthage/Build
+Carthage/
+
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+#sublime text 2 files
+*.sublime-project
+*.sublime-workspace
+
+#Node modules
+node_modules/
+DerivedData/
